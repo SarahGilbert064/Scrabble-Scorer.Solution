@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScorer.Models;
 using System.Collections.Generic;
-// using System;
+using System;
 
 namespace ScrabbleScorer.Tests
 {

@@ -23,7 +23,9 @@
 
 | ScoreCounterConstructor |||
 
-|Should correctly create an instance of ScoreCounter | ("a") | 1 |
+|Should correctly create an instance of ScoreCounter | ("A") | A |
+
+|Should correctly take user input and covert into multiple strings | ("WORD") | "W" , "O", "R", "D" |
   
 
 ## Setup Instruction
