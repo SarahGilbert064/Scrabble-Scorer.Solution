@@ -1,20 +1,25 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScorer.Models;
-using System.Collections.Generic;
-using System;
 
 namespace ScrabbleScorer.Tests
 {
-  [TestClass]
-  public class ScoreCounterTests
+  [TestClass] 
+  public class ScrabbleScorerTest
   {
+
     [TestMethod]
     public void ScoreCounterConstructor_CreatesInstanceOfScoreCounter_ScoreCounter()
     {
-      ScoreCounter newScore = new ScoreCounter("A");
+      ScoreCounter newScore = new ScoreCounter();
       Assert.AreEqual(typeof(ScoreCounter), newScore.GetType());
     }
 
-
+    [TestMethod]
+    public void CalculateScore_ReturnValue_Int()
+    {
+      ScoreCounter newScore = new ScoreCounter();
+      int score = newScore.ReturnValue("a");
+      Assert.AreEqual(1, score);
+    }
   }
 }
