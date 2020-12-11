@@ -25,7 +25,8 @@
 
 |Should correctly create an instance of ScoreCounter | ("A") | A |
 
-|Should correctly take user input and covert into multiple strings | ("WORD") | "W" , "O", "R", "D" |
+|Should correctly return value of a letter or letters and add them up to a final score | ("cat") | 6 |
+
   
 
 ## Setup Instruction
