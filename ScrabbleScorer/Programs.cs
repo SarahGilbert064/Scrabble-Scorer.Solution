@@ -1,20 +1,19 @@
-using System;
 using ScrabbleScorer.Models;
-using System.Collections.Generic;
+using System;
 
 namespace ScrabbleScorer
 {
-  public class Program
-  {
+  class Program
+  { 
+  
     public static void Main()
     {
       Console.WriteLine("Welcome to the Scrabble Scorer!");
-      Menu();
-    }
-
-    public static void Menu()
-    {
-
+      Console.WriteLine("Type a word!");
+      string input = Console.ReadLine();
+      ScoreCounter newInput = new ScoreCounter();
+      int score = newInput.ReturnValue(input);
+      Console.WriteLine(score);
     }
   }
 }
